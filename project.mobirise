@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "cr.html",
+    "currentPage": "artist.html",
     "theme": {
       "name": "startm5",
       "title": "StartM5",
@@ -22,7 +22,7 @@
         "display7Size": 1.4,
         "display4Font": "Manrope",
         "display4Size": "1.4",
-        "isRoundedImages": true,
+        "isRoundedImages": false,
         "isRoundedButtons": true,
         "isLargeButtons": true,
         "isGhostButtonBorder": true,
@@ -56,8 +56,8 @@
       }
     ],
     "favicon": "@PROJECT_PATH@/assets/images/image-20240104234815.jpg",
-    "mbrsiteDomain": "xg481feefc",
-    "imageResize": false,
+    "mbrsiteDomain": "sjiprvsbw1",
+    "imageResize": true,
     "usedWebp": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
