@@ -3829,6 +3829,26 @@ a {
 .cid-u11LoRZRD5 .content-head {
   max-width: 800px;
 }
+.cid-u1w8s0uJct {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background-color: #ffffff;
+}
+.cid-u1w8s0uJct .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u1w8s0uJct .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-u1w8s0uJct .content-text {
+  max-width: 800px;
+}
 .cid-u11M6hgnzW {
   padding-top: 0rem;
   padding-bottom: 0rem;
