@@ -22,3 +22,7 @@ for FILE in "$DIRECTORY"/*.html; do
 done
 
 echo "All HTML files have been updated."
+
+git add .
+git commit -m "update"
+git push
