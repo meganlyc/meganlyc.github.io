@@ -149,10 +149,10 @@ body {
   background-color: #000000 !important;
 }
 .bg-success {
-  background-color: #000000 !important;
+  background-color: #163300 !important;
 }
 .bg-info {
-  background-color: #f92c50 !important;
+  background-color: #260a30 !important;
 }
 .bg-warning {
   background-color: #ffffff !important;
@@ -206,8 +206,8 @@ body {
 }
 .btn-info,
 .btn-info:active {
-  background-color: #f92c50 !important;
-  border-color: #f92c50 !important;
+  background-color: #260a30 !important;
+  border-color: #260a30 !important;
   color: #ffffff !important;
   box-shadow: none;
 }
@@ -216,20 +216,20 @@ body {
 .btn-info.focus,
 .btn-info.active {
   color: inherit;
-  background-color: #fa5e79 !important;
-  border-color: #fa5e79 !important;
+  background-color: #47135a !important;
+  border-color: #47135a !important;
   box-shadow: none;
 }
 .btn-info.disabled,
 .btn-info:disabled {
   color: #ffffff !important;
-  background-color: #fa5e79 !important;
-  border-color: #fa5e79 !important;
+  background-color: #47135a !important;
+  border-color: #47135a !important;
 }
 .btn-success,
 .btn-success:active {
-  background-color: #000000 !important;
-  border-color: #000000 !important;
+  background-color: #163300 !important;
+  border-color: #163300 !important;
   color: #ffffff !important;
   box-shadow: none;
 }
@@ -238,15 +238,15 @@ body {
 .btn-success.focus,
 .btn-success.active {
   color: inherit;
-  background-color: #1a1a1a !important;
-  border-color: #1a1a1a !important;
+  background-color: #2c6600 !important;
+  border-color: #2c6600 !important;
   box-shadow: none;
 }
 .btn-success.disabled,
 .btn-success:disabled {
   color: #ffffff !important;
-  background-color: #1a1a1a !important;
-  border-color: #1a1a1a !important;
+  background-color: #2c6600 !important;
+  border-color: #2c6600 !important;
 }
 .btn-warning,
 .btn-warning:active {
@@ -381,29 +381,29 @@ body {
 .btn-info-outline,
 .btn-info-outline:active {
   background-color: transparent !important;
-  border-color: #f92c50;
-  color: #f92c50;
+  border-color: #260a30;
+  color: #260a30;
 }
 .btn-info-outline:hover,
 .btn-info-outline:focus,
 .btn-info-outline.focus,
 .btn-info-outline.active {
-  color: #c90628 !important;
+  color: #000000 !important;
   background-color: transparent !important;
-  border-color: #c90628 !important;
+  border-color: #000000 !important;
   box-shadow: none !important;
 }
 .btn-info-outline.disabled,
 .btn-info-outline:disabled {
   color: #ffffff !important;
-  background-color: #f92c50 !important;
-  border-color: #f92c50 !important;
+  background-color: #260a30 !important;
+  border-color: #260a30 !important;
 }
 .btn-success-outline,
 .btn-success-outline:active {
   background-color: transparent !important;
-  border-color: #000000;
-  color: #000000;
+  border-color: #163300;
+  color: #163300;
 }
 .btn-success-outline:hover,
 .btn-success-outline:focus,
@@ -417,8 +417,8 @@ body {
 .btn-success-outline.disabled,
 .btn-success-outline:disabled {
   color: #ffffff !important;
-  background-color: #000000 !important;
-  border-color: #000000 !important;
+  background-color: #163300 !important;
+  border-color: #163300 !important;
 }
 .btn-warning-outline,
 .btn-warning-outline:active {
@@ -511,10 +511,10 @@ body {
   color: #000000 !important;
 }
 .text-success {
-  color: #000000 !important;
+  color: #163300 !important;
 }
 .text-info {
-  color: #f92c50 !important;
+  color: #260a30 !important;
 }
 .text-warning {
   color: #ffffff !important;
@@ -546,7 +546,7 @@ a.text-success.active {
 a.text-info:hover,
 a.text-info:focus,
 a.text-info.active {
-  color: #ba0525 !important;
+  color: #000000 !important;
 }
 a.text-warning:hover,
 a.text-warning:focus,
@@ -586,7 +586,7 @@ a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-cap
   background-color: #70c770;
 }
 .alert-info {
-  background-color: #f92c50;
+  background-color: #260a30;
 }
 .alert-warning {
   background-color: #ffffff;
@@ -621,11 +621,11 @@ a:hover {
 }
 .mbr-plan-header.bg-success .mbr-plan-subtitle,
 .mbr-plan-header.bg-success .mbr-plan-price-desc {
-  color: #b3b3b3;
+  color: #7cff1a;
 }
 .mbr-plan-header.bg-info .mbr-plan-subtitle,
 .mbr-plan-header.bg-info .mbr-plan-price-desc {
-  color: #fff2f5;
+  color: #deb0ef;
 }
 .mbr-plan-header.bg-warning .mbr-plan-subtitle,
 .mbr-plan-header.bg-warning .mbr-plan-price-desc {
@@ -6033,6 +6033,29 @@ a {
 .cid-ucGARsVOFi .mbr-section-title {
   color: #000000;
 }
+.cid-udtNWeR8xg {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background-color: #ffffff;
+}
+.cid-udtNWeR8xg .mbr-text {
+  color: #000000;
+  text-align: center;
+}
+.cid-udtNWeR8xg .mbr-section-subtitle {
+  color: #000000;
+}
+.cid-udtNWeR8xg .mbr-section-title {
+  color: #000000;
+}
+.cid-udtNxwD7Xt {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background-color: #ffffff;
+}
+.cid-udtNxwD7Xt .content-head {
+  max-width: 800px;
+}
 .cid-ucGtOotoNe {
   padding-top: 0rem;
   padding-bottom: 0rem;
@@ -6651,14 +6674,6 @@ a {
 .cid-udn0Z8yVej .content-head {
   max-width: 800px;
 }
-.cid-udn0ZEpNhw {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  background-color: #ffffff;
-}
-.cid-udn0ZEpNhw .content-head {
-  max-width: 800px;
-}
 .cid-udn1pRCQSG {
   padding-top: 5rem;
   padding-bottom: 0rem;
@@ -6772,14 +6787,6 @@ a {
 }
 .cid-udnJCpaZ56 .mbr-section-title {
   color: #ffffff;
-}
-.cid-udn7LPGXWh {
-  padding-top: 9rem;
-  padding-bottom: 0rem;
-  background-color: #ffffff;
-}
-.cid-udn7LPGXWh .content-head {
-  max-width: 800px;
 }
 .cid-u2a2Td3dsi {
   z-index: 1000;
@@ -7344,6 +7351,14 @@ a {
   .cid-u2a2Td3dsi .navbar-collapse {
     padding: 1rem;
   }
+}
+.cid-udn7LPGXWh {
+  padding-top: 9rem;
+  padding-bottom: 0rem;
+  background-color: #ffffff;
+}
+.cid-udn7LPGXWh .content-head {
+  max-width: 800px;
 }
 .cid-tL7oDZlVRK {
   padding-top: 6rem;
@@ -8715,6 +8730,14 @@ a {
 .cid-udmdbppj2c .mbr-section-btn {
   color: #000000;
 }
+.cid-udta7R2OcX {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background-color: #ffffff;
+}
+.cid-udta7R2OcX .content-head {
+  max-width: 800px;
+}
 .cid-udmebQSpCs {
   padding-top: 7rem;
   padding-bottom: 0rem;
@@ -8726,6 +8749,9 @@ a {
 .cid-udmebQSpCs .mbr-text,
 .cid-udmebQSpCs .mbr-section-btn {
   text-align: left;
+}
+.cid-udmebQSpCs .mbr-section-title DIV {
+  text-align: center;
 }
 .cid-udmsPLZl33 {
   padding-top: 0rem;
