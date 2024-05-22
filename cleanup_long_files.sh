@@ -23,7 +23,7 @@ find $IMAGE_DIR -type f \( -iname \*.jpg -o -iname \*.jpeg -o -iname \*.png -o -
     name="${filename%.*}"
     
     # Check if the file name length is too long (e.g., more than 50 characters)
-    if [ ${#name} -gt 50 ]; then
+    if [ ${#name} -gt 30 ]; then
         echo "File name too long: $filename"
         
         # Generate a new file name
