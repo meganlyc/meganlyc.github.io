@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# clean up
+bash cleanup_long_files.sh
+
 # Directory containing HTML files
 DIRECTORY="./"
 
