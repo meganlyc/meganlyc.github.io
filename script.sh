@@ -40,22 +40,67 @@ temporary_email="liyuchenlyc2022@163.com"
 # Modify the git committer temporarily for the script
 set_git_committer "$temporary_name" "$temporary_email"
 
+# Track changes
+added_files=0
+updated_files=0
+removed_files=0
+
 # Loop through all HTML files in the specified directory
 for FILE in "$DIRECTORY"/*.html; do
     # Check if file exists
     if [ -f "$FILE" ]; then
-        # Use sed to insert the JavaScript just before the closing </body> tag
-        sed -i "/<\/body>/i <script>${JS_TO_ADD}<\/script>" "$FILE"
-        echo "Updated $FILE"
+        # Check if this is a new file
+        if git ls-files --others --exclude-standard | grep -q "$FILE"; then
+            added_files=$((added_files + 1))
+            git add "$FILE"
+            echo "Added $FILE"
+        else
+            # Update existing files
+            sed -i "/<\/body>/i <script>${JS_TO_ADD}<\/script>" "$FILE"
+            updated_files=$((updated_files + 1))
+            echo "Updated $FILE"
+        fi
     fi
 done
 
+# Detect removed files
+for FILE in $(git ls-files); do
+    if [ ! -f "$FILE" ]; then
+        removed_files=$((removed_files + 1))
+        git rm "$FILE"
+        echo "Removed $FILE"
+    fi
+done
+
+# Generate dynamic commit message based on changes
+commit_message=""
+
+if [ "$added_files" -gt 0 ]; then
+    commit_message+="Added $added_files new file(s). "
+fi
+
+if [ "$updated_files" -gt 0 ]; then
+    commit_message+="Updated $updated_files existing file(s). "
+fi
+
+if [ "$removed_files" -gt 0 ]; then
+    commit_message+="Removed $removed_files file(s). "
+fi
+
+if [ -z "$commit_message" ]; then
+    commit_message="No significant changes."
+fi
+
 # Commit and push the changes with the temporary git committer
 git add .
-git commit -m "update"
+git commit -m "$commit_message"
 git push
 
 # Restore the original git committer name and email
 set_git_committer "$original_name" "$original_email"
 
-echo "All HTML files have been updated, and the original Git committer information is restored."
+echo "All changes have been processed:"
+echo " - Added files: $added_files"
+echo " - Updated files: $updated_files"
+echo " - Removed files: $removed_files"
+echo "Original Git committer information is restored."
